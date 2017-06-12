@@ -2,8 +2,8 @@
 
 <h1>Games</h1>
 
-<table>
-  <thead>
+<table class="table table-striped">
+  <thead class="thead thead-default">
     <tr>
       <th>First player</th>
       <th>Second player</th>
@@ -34,4 +34,5 @@
 
 <br>
 
-<%= link_to 'New Game', new_game_path %>
+<%= link_to 'New Game', new_game_path, class: 'btn btn-secondary' %>
+

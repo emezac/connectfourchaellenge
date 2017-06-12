@@ -11,34 +11,34 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :first_player %>
-    <%= form.number_field :first_player, id: :game_first_player %>
+  <div class="form-group">
+    <%= form.label :first_player, class: 'form-control-label' %>
+    <%= form.number_field :first_player, id: :game_first_player, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :second_player %>
-    <%= form.number_field :second_player, id: :game_second_player %>
+  <div class="form-group">
+    <%= form.label :second_player, class: 'form-control-label' %>
+    <%= form.number_field :second_player, id: :game_second_player, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :created %>
-    <%= form.datetime_select :created, id: :game_created %>
+  <div class="form-group">
+    <%= form.label :created, class: 'form-control-label' %>
+    <%= form.datetime_select :created, id: :game_created, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :game_status %>
-    <%= form.text_field :game_status, id: :game_game_status %>
+  <div class="form-group">
+    <%= form.label :game_status, class: 'form-control-label' %>
+    <%= form.text_field :game_status, id: :game_game_status, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :game_type %>
-    <%= form.text_field :game_type, id: :game_game_type %>
+  <div class="form-group">
+    <%= form.label :game_type, class: 'form-control-label' %>
+    <%= form.text_field :game_type, id: :game_game_type, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :first_player_piece_code %>
-    <%= form.text_field :first_player_piece_code, id: :game_first_player_piece_code %>
+  <div class="form-group">
+    <%= form.label :first_player_piece_code, class: 'form-control-label' %>
+    <%= form.text_field :first_player_piece_code, id: :game_first_player_piece_code, class: 'form-control' %>
   </div>
 
   <div class="actions">
