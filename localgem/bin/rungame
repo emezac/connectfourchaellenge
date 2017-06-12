@@ -1,0 +1,59 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/ai'
+require_relative '../lib/board'
+require_relative '../lib/engine'
+require_relative '../lib/minimax'
+
+
+#A little script that starts a standard Human vs. CPU game.
+
+@board = Board.construct(7,6)
+ai = AI.new()
+@engine = Engine.new(:winner)
+
+def input_valid? move
+  if move < 0 then return false end
+  if move > 6 then return false end
+  if @board.column_full? move then return false end
+  true
+end
+
+# Clear some space
+10.times {puts "\n"}
+
+# Game loop
+["cpu","human"].cycle do |player|
+
+  if player == "human"
+    move = (gets.chomp).to_i
+    move = move-1
+    while !input_valid?(move)
+      move = (gets.chomp).to_i
+    end
+
+    @board.drop_coin(move,"X")
+  else
+    move = ai.next_move @board
+    if move == nil
+      puts "ERROR"
+    end
+    @board.drop_coin(move,"O")
+
+    puts "\e[#{@board.height+3}A"
+
+    puts @board
+  end
+
+  winner = @engine.score(@board)
+  full = @board.full?
+
+  if full || winner != 0
+    puts "_____________________"
+    puts @board
+    if winner == 0 then puts "DRAW!" end
+    if winner == 1 then puts "YOU LOSE!" end
+    if winner == -1 then puts "YOU WIN!" end
+    break
+  end
+end
