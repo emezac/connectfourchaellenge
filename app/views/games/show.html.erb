@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First player:</strong>
+  <%= @game.first_player %>
+</p>
+
+<p>
+  <strong>Second player:</strong>
+  <%= @game.second_player %>
+</p>
+
+<p>
+  <strong>Created:</strong>
+  <%= @game.created %>
+</p>
+
+<p>
+  <strong>Game status:</strong>
+  <%= @game.game_status %>
+</p>
+
+<p>
+  <strong>Game type:</strong>
+  <%= @game.game_type %>
+</p>
+
+<p>
+  <strong>First player piece code:</strong>
+  <%= @game.first_player_piece_code %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

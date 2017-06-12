@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_player: 1
+  second_player: 1
+  created: 2017-06-12 03:37:07
+  game_status: MyString
+  game_type: MyString
+  first_player_piece_code: MyString
+
+two:
+  first_player: 1
+  second_player: 1
+  created: 2017-06-12 03:37:07
+  game_status: MyString
+  game_type: MyString
+  first_player_piece_code: MyString
