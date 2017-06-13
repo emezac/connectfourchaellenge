@@ -24,8 +24,9 @@
         <td><%= game.game_status %></td>
         <td><%= game.game_type %></td>
         <td><%= game.first_player_piece_code %></td>
+        <td><%= link_to 'Play', start_game_url(game)%></td>
         <td><%= link_to 'Show', game %></td>
-        <td><%= link_to 'Edit', edit_game_path(game) %></td>
+        <td><%= link_to 'Edit', edit_game_path(game) %></td> 
         <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

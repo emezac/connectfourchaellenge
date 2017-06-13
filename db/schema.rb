@@ -18,9 +18,6 @@ ActiveRecord::Schema.define(version: 20170612075755) do
   create_table "Games_Players", id: false, force: :cascade do |t|
     t.bigint "Player_id", null: false
     t.bigint "Game_id", null: false
-    t.integer "board_row"
-    t.integer "board_column"
-    t.date "created_at"
   end
 
   create_table "games", force: :cascade do |t|

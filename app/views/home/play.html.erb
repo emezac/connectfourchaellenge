@@ -1,178 +1,228 @@
-<h1></h1>
-<p>ConnectFour</p>
+<h1>ConnectFour <%=@move %></h1>
+
+
+<h3>Computer last move : <%=@move %> </h3>
+<script type="text/javascript">
+	//alert(gon.move)
+	//function changeImage(gon.move) {
+		myimg="img"+gon.move;
+        document.getElementById(myimg).src="/assets/letter-x.jpg";
+        document.getElementById(myimg).class="imagebox";
+    //}
+
+</script>
+<div class="row">
+	  <div class="card-deck">
+	  <img class="cells"  src="/assets/cells.jpg">
+	  </div>
+</div>
 
 <div class="row">
 	  <div class="card-deck">
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img50" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img50");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img51" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img51");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img52" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img52");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img53" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img53");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img54" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img54");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	      <img class="imageboxempty" id="img55" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img55");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	      <img class="imageboxempty" id="img56" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img56");';'>
+	  </div>
+	</div>
+</div>
+
+<div class="row">
+	  <div class="card-deck">
+	  <div class="card">
+	     <img class="imageboxempty" id="img43" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img43");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img44" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img44");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img45" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img45");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img46" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img46");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img47" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img47");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img48" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img48");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img49" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img49");';'>
+	  </div>
+	</div>
+</div>
+
+
+<div class="row">
+	  <div class="card-deck">
+	  <div class="card">
+	     <img class="imageboxempty" id="img36" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img36");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img37" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img37");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img38" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img38");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img39" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img39");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img40" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img40");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img41" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img41");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img42" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img42");';'>
+	  </div>
+	</div>
+</div>
+
+<div class="row">
+	  <div class="card-deck">
+	  <div class="card">
+	     <img class="imageboxempty" id="img29" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img29");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img30" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img30");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img31" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img31");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img32" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img32");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img33" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img33");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img34" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img34");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img35" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img35");';'>
+	  </div>
+	</div>
+</div>
+
+<div class="row">
+	  <div class="card-deck">
+	  <div class="card">
+	     <img class="imageboxempty" id="img22" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img22");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img23" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img23");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img24" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img24");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img25" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img25");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img26" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img26");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img27" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img27");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img28" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img28");';'>
+	  </div>
+	</div>
+</div>
+
+
+
+<div class="row">
+	  <div class="card-deck">
+	  <div class="card">
+	     <img class="imageboxempty" id="img15" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img15");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img16" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img16");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img17" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img17");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img18" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img18");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img19" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img19");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img20" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img20");';'>
+	  </div>
+	  <div class="card">
+	     <img class="imageboxempty" id="img21" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img21");';'>
 	  </div>
 	</div>
 </div>
 <div class="row">
 	  <div class="card-deck">
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+         <img class="imageboxempty" id="img8" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img8");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img9" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img9");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img10" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img10");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img11" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img11");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img12" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img12");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img13" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img13");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	</div>
-</div>
-<div class="row">
-	  <div class="card-deck">
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img14" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img14");';'>
 	  </div>
 	</div>
 </div>
+
 <div class="row">
 	  <div class="card-deck">
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+         <img class="imageboxempty" id="img1" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img1");'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img2" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img2");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img3" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img3");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img4" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img4");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img5" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img5");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
+	     <img class="imageboxempty" id="img6" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img6");';'>
 	  </div>
 	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	</div>
-</div>
-<div class="row">
-	  <div class="card-deck">
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	</div>
-</div>
-<div class="row">
-	  <div class="card-deck">
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	</div>
-</div>
-<div class="row">
-	  <div class="card-deck">
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-empty.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-x.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-o.jpg">
-	  </div>
-	  <div class="card">
-	    <img class="imagebox" src="/assets/letter-o.jpg">
+	     <img class="imageboxempty" id="img7" src="/assets/letter-empty.jpg"  onclick='changeImage(src="/assets/letter-o.jpg","imagebox","img7");';'>
 	  </div>
 	</div>
 </div>
@@ -203,3 +253,5 @@
     </div>
 </div>
 </div>
+
+

@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_action :set_game, only: [:show, :edit, :update, :destroy]
+  before_action :set_game, only: [:show, :edit, :update, :destroy, :start]
 
   # GET /games
   # GET /games.json
@@ -10,6 +10,12 @@ class GamesController < ApplicationController
   # GET /games/1
   # GET /games/1.json
   def show
+  end
+
+  def start
+      @move = @game.start
+      redirect_to playnewgame_url(@move)
+      #render :template => "home/play"
   end
 
   # GET /games/new

@@ -1,5 +1,4 @@
 
-
 class AI
    INFNEG = -1000000000
    INF = 1000000000
