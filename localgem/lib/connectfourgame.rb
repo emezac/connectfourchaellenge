@@ -8,6 +8,7 @@ class ConnectFour
   def board
     board = Board.construct(7,6)
   end
+  
   def ai
     ai = AI.new()
   end
@@ -17,7 +18,7 @@ class ConnectFour
   end
 
   def minimax
-    minimax = Engine.new(:winner)
+    minimax = MinimaxNode.new
   end
   def maxnode
       maxnode = MaxNode.new 

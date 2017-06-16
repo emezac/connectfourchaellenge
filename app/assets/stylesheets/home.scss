@@ -14,8 +14,13 @@
     float: left;
 }
 
+.onfocus{
+   
+  /* visibility: hidden; */
+   display: none;
+ }
 
-.imagebox {
+.imagebox{
     width: 53%;
     height: 63%;
 }

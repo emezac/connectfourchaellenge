@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player: one
+  game: one
+  board_row: MyString
+  board_column: MyString
+  boardmatrix: MyString
+
+two:
+  player: two
+  game: two
+  board_row: MyString
+  board_column: MyString
+  boardmatrix: MyString

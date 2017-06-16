@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_action :set_game, only: [:show, :edit, :update, :destroy, :start]
+  before_action :set_game, only: [:show, :edit, :update, :destroy, :start, :next_move]
 
   # GET /games
   # GET /games.json
@@ -13,9 +13,22 @@ class GamesController < ApplicationController
   end
 
   def start
+      sign="0"
       @move = @game.start
+      @game.save_move(@move,@game.second_player,sign)
       redirect_to playnewgame_url(@move)
-      #render :template => "home/play"
+      #render :template => "home/play"s
+  end
+
+  def next_move
+    player =  params[:current_player]
+    move =  params[:move]
+    if( player == 2) then #bot
+      sign="0"
+    else
+      sign="X"
+    end
+    @game.save_move(move,player,sign)
   end
 
   # GET /games/new
@@ -75,6 +88,6 @@ class GamesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def game_params
-      params.require(:game).permit(:first_player, :second_player, :created, :game_status, :game_type, :first_player_piece_code)
+      params.require(:game).permit(:first_player, :second_player, :created, :game_status, :game_type, :first_player_piece_code,:current_player, :move)
     end
 end
